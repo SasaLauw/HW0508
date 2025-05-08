@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印尼美食</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+
+        .nav {
+            position: relative;
+            background-color: #D1B894;
+            padding: 10px 0;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1em;
+            color: #333;
+            background-color: #d3d3d3;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+            .list span {
+                cursor: pointer;
+            }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .product {
+            padding: 10px;
+            width: 200px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        .milk-tea {
+            background-color: #D1B894;
+        }
+
+        .light-blue {
+            background-color: #ADD8E6;
+        }
+
+        .light-pink {
+            background-color: #FFB6C1;
+        }
+
+        .light-yellow {
+            background-color: #FAFAD2;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .list {
+                flex-direction: column;
+                display: none;
+                margin-top: 50px;
+            }
+
+                .list.active {
+                    display: flex;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>印尼美食</h1>
+
+    <div class="nav">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="list" id="menu">
+            <span>炒饭</span>
+            <span>黄姜饭</span>
+            <span>沙爹</span>
+            <span>加多加多</span>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="product milk-tea">
+            <img src="https://i0.wp.com/ninetyroadtravel.com/wp-content/uploads/2023/01/%E5%8D%B0%E5%B0%BC%E7%82%92%E9%A3%AF-800.webp" alt="Nasi Goreng">
+            <p>Nasi Goreng</p>
+        </div>
+        <div class="product light-blue">
+            <img src="https://i0.wp.com/ninetyroadtravel.com/wp-content/uploads/2023/01/%E5%8D%B0%E5%B0%BC%E8%96%91%E9%BB%83%E9%A3%AF-800.webp" alt="Tumpeng Nasi Kuning">
+            <p>Tumpeng Nasi Kuning</p>
+        </div>
+        <div class="product light-pink">
+            <img src="https://i0.wp.com/ninetyroadtravel.com/wp-content/uploads/2023/01/%E5%8D%B0%E5%B0%BC-%E6%B2%99%E7%88%B9-600.webp" alt="Sate">
+            <p>Sate</p>
+        </div>
+        <div class="product light-yellow">
+            <img src="https://i0.wp.com/ninetyroadtravel.com/wp-content/uploads/2023/01/%E5%8A%A0%E5%A4%9A%E5%8A%A0%E5%A4%9A-Gado-gado-%E5%8D%B0%E5%B0%BC%E7%BE%8E%E9%A3%9F.webp" alt="Gado-Gado">
+            <p>Gado-Gado</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

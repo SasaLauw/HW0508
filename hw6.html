@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台湾老街</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #D1B894;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .hamburger {
+            width: 30px;
+            margin: 10px auto;
+        }
+
+        .line {
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            margin: 3px 0;
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .light-purple {
+            background-color: #D8BFD8;
+        }
+
+        .light-yellow {
+            background-color: #F5DEB3;
+        }
+
+        .light-pink {
+            background-color: #FFC0CB;
+        }
+
+        .light-blue {
+            background-color: #ADD8E6;
+        }
+
+        .light-green {
+            background-color: #90EE90;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 1250px) {
+            .item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <h2>台湾老街有哪些？</h2>
+
+    <nav>
+        <span>九份老街</span> -
+        <span>大溪老街</span> -
+        <span>十分老街</span> -
+        <span>安平老街</span> -
+        <span>深坑老街</span> -
+        
+    </nav>
+
+    <div class="list">
+        <div class="item light-purple">
+            <img src="https://cc.tvbs.com.tw/img/program/upload/2024/01/31/20240131190551-50b79447.jpg" alt="九分老街">
+            <p>九份老街</p>
+        </div>
+        <div class="item light-yellow">
+            <img src="https://images.chinatimes.com/newsphoto/2022-06-27/656/B20A00_P_04_02.jpg" alt="大溪老街">
+            <p>大溪老街</p>
+        </div>
+        <div class="item light-pink">
+            <img src="https://res.klook.com/image/upload/activities/jtnbpshj12r4dndptxor.jpg" alt="十分老街">
+            <p>十分老街</p>
+        </div>
+        <div class="item light-blue">
+            <img src="https://www.taiwanblog.blog/wp-content/uploads/2021/05/IMG_5098-1-scaled.jpg" alt="安平老街">
+            <p>安平老街</p>
+        </div>
+        <div class="item light-green">
+            <img src="https://www.travel.taipei/image/363231/?r=1682560313771" alt="深坑老街">
+            <p>深坑老街</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>

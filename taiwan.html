@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台湾老街選擇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #D1B894;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                padding: 15px;
+            }
+
+            select, input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>選擇你喜歡的台灣老街</h2>
+    <form>
+        <label for="street">台灣老街選項：</label>
+        <select id="street" name="street">
+            <option value="jiufen">九份老街</option>
+            <option value="daxi">大溪老街</option>
+            <option value="shifen">十分老街</option>
+            <option value="anping">安平老街</option>
+            <option value="shenkeng">深坑老街</option>
+            <option value="tamsui">淡水老街</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
