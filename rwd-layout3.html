@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="rwd-layout3.css">
+    <style>
+       
+        .list {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .item {
+            flex: none;
+            width: 280px;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width: 1250px) {
+           
+            .list {
+                flex-wrap: wrap;
+            }
+
+            .item {
+                width: 45%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+          
+            .item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="list">
+        <div class="item" style="background-color: lightblue;"> 項目 1</div>
+        <div class="item" style="background-color: lightgreen;">項目 2</div>
+        <div class="item" style="background-color: lightcoral;">項目 3</div>
+        <div class="item" style="background-color: lightpink;"> 項目 4</div>
+    </div>
+
+</body>
+</html>
